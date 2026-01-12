@@ -1,0 +1,25 @@
+REM harmless (hopefully) fullscreen brick/update screen prank
+DEFAULT_DELAY 200
+
+GUI r
+DELAY 800
+STRING chrome "https://fakeupdate.net/win10/bsod.html"
+ENTER
+DELAY 5000           
+F11                 
+
+DELAY 10000         
+
+
+GUI SPACE           
+DELAY 800
+STRING chrome
+ENTER
+DELAY 3000
+COMMAND t            
+DELAY 1000
+COMMAND l            
+STRING https://fakeupdate.net/apple/
+ENTER
+DELAY 5000
+COMMAND SHIFT F      
